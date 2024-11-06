@@ -21,7 +21,7 @@ When solving coding problems, debugging with `console.log` statements is common 
 
 1. Clone this repository:
 ```bash
-git clone [repository-url]
+git clone https://github.com/dennisrcao/js-coding-assessment-localhost.git
 cd js-coding-assessment-template
 ```
 
