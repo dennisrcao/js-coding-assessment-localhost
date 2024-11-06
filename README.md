@@ -1,6 +1,6 @@
-# JavaScript Coding Assessment Template (Console.log → LocalHost)
+# JavaScript Coding Assessment Template (console.log → LocalHost)
 
-A real-time console log visualization tool designed for developers working on coding problems who want to see their debug output on a separate screen. This tool automatically mirrors all `console.log` statements from your solution code to a clean, readable web interface.
+A real-time console log visualization tool designed for developers working on coding problems who want to see their debug output on a separate screen (`localhost:3000`). This tool automatically mirrors all `console.log` statements from your main.js code to a clean, readable web interface.
 
 ## Overview
 
