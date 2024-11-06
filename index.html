@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Console Logs</title>
+  <style>
+    #logs {
+      padding: 20px;
+      font-family: monospace;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      margin: 20px;
+    }
+    #logs div {
+      margin: 5px 0;
+      padding: 5px;
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>Console Logs</h1>
+  <div id="logs"></div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+    const logsDiv = document.getElementById('logs');
+
+    socket.on('connect', () => {
+      // Clear existing logs when reconnecting
+      logsDiv.innerHTML = '';
+    });
+
+    socket.on('log', (message) => {
+      const logElement = document.createElement('div');
+      logElement.textContent = message;
+      logsDiv.appendChild(logElement);
+    });
+  </script>
+</body>
+</html>
