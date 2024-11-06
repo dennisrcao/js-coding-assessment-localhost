@@ -1,22 +1,21 @@
 # JavaScript Coding Assessment Template (console.log → LocalHost)
 
-A real-time console log visualization tool designed for developers working on coding problems who want to see their debug output on a separate screen (`localhost:3000`). This tool automatically mirrors all `console.log` statements from your main.js code to a clean, readable web interface.
+A real-time console log visualization tool designed for developers working on coding problems who want to see their debug output on a separate screen (`localhost:3000`). This tool automatically mirrors all `console.log` statements from your `main.js` code to a clean, readable web interface.
+
+## Tech Stack
+- **Backend**: Node.js with Express
+- **Real-time Communication**: Socket.IO
+- **Frontend**: Plain HTML/CSS/JavaScript
+- **Development**: Nodemon for auto-reloading
+- **Testing**: Jest
 
 ## Overview
-
 When solving coding problems, debugging with `console.log` statements is common practice. However, constantly switching between your code editor and terminal can break your flow. This tool allows you to:
 
 - Write and debug your solution code in `main.js`
 - See all console output in real-time on a separate browser window
 - Maintain a history of console logs across code runs
 
-## Tech Stack
-
-- **Backend**: Node.js with Express
-- **Real-time Communication**: Socket.IO
-- **Frontend**: Plain HTML/CSS/JavaScript
-- **Development**: Nodemon for auto-reloading
-- **Testing**: Jest
 
 ## Getting Started
 
